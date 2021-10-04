@@ -1,0 +1,29 @@
+@import 'src/variables';
+
+@mixin color-modifiers($attribute: 'color') {
+	$colors: $array-colors;
+
+	@each $name, $hex in $colors {
+		&-#{$name} {
+      #{$attribute}: $hex;
+      font-size: 1rem;
+    }
+    
+    @include laptop-breakpoint () {
+      &-#{$name} {
+        #{$attribute}: $hex;
+        font-size: .8rem;
+      }
+    }
+	}
+}
+
+@mixin color-modifiers-hover($attribute: 'color') {
+	$hover-colors: $array-hover-colors;
+
+	@each $name, $hex in $hover-colors {
+		&-#{$name}:hover {
+			#{$attribute}: $hex;
+		}
+	}
+}

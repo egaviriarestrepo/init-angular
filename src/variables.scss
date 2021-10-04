@@ -1,0 +1,51 @@
+$font: 'Lato';
+$primary-color: rgb(142, 145, 145);
+$primary-color-hover: rgb(211, 211, 211);
+$secondary-color: rgba(13, 153, 156, 1);
+$secondary-color-hover: rgb(11, 136, 138);
+$secondary-aux-color: rgb(20, 165, 198);
+$primary-text: rgba(19, 97, 158, 1);
+$secondary-text: rgba(74, 74, 74, 1);
+
+$gray: rgba(239, 239, 239, 1);
+$dark: rgba(106, 106, 106, 1);
+$white: rgba(255, 255, 255, 1);
+$disabled: rgba(165, 165, 165, 1);
+$transparent: transparent;
+$border: rgba(171, 171, 171, 1);
+$bg-table: rgba(235, 235, 235, 1);
+
+$info: rgba(12, 101, 156, 1);
+$info-hover: rgb(11, 85, 131);
+$success: rgba(28, 190, 81, 1);
+$success-hover: rgb(24, 169, 72);
+$danger: rgba(253, 73, 64, 1);
+$danger-hover: rgb(235, 62, 52);
+
+// Colors
+$gray-light: lighten($gray, 15%);
+$gray-lighter: lighten($gray, 30%);
+
+$array-colors: (
+    primary-color: $primary-color,
+    secondary-color: $secondary-color,
+    info: $info,
+    success: $success,
+    danger: $danger,
+    dark: $dark,
+    gray: $gray,
+);
+
+$array-hover-colors: (
+    primary-color: $primary-color-hover,
+    secondary-color: $secondary-color-hover,
+    info: $info-hover,
+    success: $success-hover,
+    danger: $danger-hover,
+);
+
+$sidebar-width: 330px;
+
+// Filters
+$blue-filter: invert(21%) sepia(100%) saturate(1188%) hue-rotate(180deg) brightness(64%) contrast(100%) !important;
+$secondary-filter: invert(60%) sepia(90%) saturate(923%) hue-rotate(150deg) brightness(88%) contrast(87%) !important;

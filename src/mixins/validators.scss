@@ -1,0 +1,16 @@
+@import 'src/variables';
+
+.ng-invalid.ng-touched:not(form){
+    border-bottom: 2px solid $danger !important;
+    color: $danger !important;
+    &::placeholder {
+        color: $danger !important;
+    }
+}
+
+
+label {
+   i {
+        color: $danger !important;
+   }
+}

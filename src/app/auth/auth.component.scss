@@ -1,0 +1,57 @@
+.input:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.2s linear;
+    width: 202px;
+  }
+
+  .password-toggle {
+    position: absolute !important;
+    top: 12px;
+    right: 10px !important;
+    cursor: pointer;
+    z-index: 99;
+  }
+  
+  .hide-password {
+    color: #968f8f !important;
+  }
+  
+  .hide-password:hover {
+    color: rgb(7, 157, 7) !important;
+  }
+  
+  .wrapper {
+    height: 100vh;
+  }
+
+
+
+.fullscreen-login-img {
+  background-image: url("/assets/img/background-login.png");	
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) { 
+  .fullscreen-login-img {
+    height: 50vh;
+  }
+ }
+
+
+

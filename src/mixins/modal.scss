@@ -1,0 +1,42 @@
+@import 'src/variables';
+
+.modal-header {
+    border-bottom: 1px solid transparent;
+    background: white !important;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid transparent;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.502)
+   }
+  
+   .modal-content {
+    background-color: white !important;
+  }
+
+  .modal-display {
+    div {
+       margin-top: 0.5rem !important;
+       margin-bottom: 0.5rem !important;
+       -webkit-box-pack: justify !important;
+       justify-content: space-between !important;
+       display: -webkit-box !important;
+       display: flex !important;
+       span {
+           font-size: 18px !important;
+       }
+    }
+}
+
+.modal-lg {
+   max-width: 680px !important;
+}

@@ -1,0 +1,35 @@
+<form (submit)="handleSubmit()" #facturaForm="ngForm">
+    <div class="row d-flex justify-content-center">
+       <div class="col-xl-3">
+           <div class="form-group">
+               <label for="tipo_documento">Tipo documento</label>
+               <select class="form-control" id="tipo_documento" name="tipo_documento" [(ngModel)]="params.tipo_documento" required>
+                 <option *ngFor="let select of selects" [value]="select.value"> {{ select.label }} </option>
+               </select>
+             </div>
+       </div>
+       <div class="col-xl-3">
+           <div class="form-group">
+               <label for="consecutivo">Consecutivo</label>
+               <input type="text" 
+                      class="form-control" 
+                      id="consecutivo" 
+                      name="consecutivo" 
+                      [(ngModel)]="params.consecutivo" 
+                      aria-describedby="consecutivo"
+                      (keydown)="helper.onlyNumber($event)"
+                      placeholder="" 
+                      required>
+           </div>
+       </div>
+       <div class="col-xl-3">
+           <div class="form-group">
+               <label for="prefijo">Prefijo</label>
+               <input type="text" class="form-control" id="prefijo" aria-describedby="prefijo" name="prefijo" [(ngModel)]="params.prefijo"  placeholder="" required>
+           </div>
+       </div>
+       <div class="col-xl-3 text-center">
+           <button type="submit" class="btn btn-primary" [disabled]="facturaForm.form.invalid">Consultar</button>
+       </div>
+    </div>
+</form>

@@ -1,0 +1,6 @@
+@import 'module';
+
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+*, *:focus{ font-family: $font; outline:0px !important;}
+.pointer { cursor: pointer !important; }

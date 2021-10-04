@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <aside id="sidebar" [ngClass]="{ 'active': false }">
+        <div class="sidebar-header mt-3 px-5">
+            <img class="img-fluid" src="assets/img/logo.svg" alt="Logo">
+        </div>
+        <ul class="list-unstyled components">
+            <li *ngFor="let item of navigation; let i = index">
+                <a [routerLink]="[item.path]" routerLinkActive="active" class="px-5"> 
+                    <span class="ml-2"> {{ item.alt }} </span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div id="content" class="main-wrapper" [ngClass]="{ 'active': false }">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<app-modal-logout></app-modal-logout>
